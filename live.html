@@ -1,0 +1,52 @@
+<html>
+
+<head>
+  <title>CODEMAIDAN</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.2.8/ace.js"></script>
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
+  <link rel="shortcut icon" href="/favicon.ico" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="stylesheet" href="index.css" type="text/css">
+</head>
+
+<body class="container-fluid">
+  <div id="main" class>
+    <div id="header">
+    <center>
+      <h1>CODEMAIDAN -LIVE EDITOR</h1></center>
+    </div>
+    <label> SELECT THEME:</label> <select id="theme" onchange="themchng()">
+        <option value="twilight" >Twilight</option>
+            <option value="monokai">Monokai</option>
+            <option value="terminal">Terminal</option>
+            <option value="eclipse">Eclipse</option>
+            <option value="tomorrow_night_blue">Tomorrow night blue</option>
+        <option value="iplastic">Iplastic</option>
+        <option value="merbivore_soft">Merbivore Soft</option>
+        <option value="cobalt">Cobalt</option>
+        </select>
+
+    <div class="cont">
+      <h21>Type your Code:</h21><br>
+    </div>
+
+    <div id="outr">
+      <div id="iner">
+        <button type="button" onclick="downld()" id="dwn"><i class="fa fa-download fa-fw"style="color:black"></i></button>
+      </div>
+      <div id="editor" onkeyup="disp()">
+      </div>
+    </div>
+    <iframe name="tragetCode" id="myframe" placeholder="output"></iframe>
+
+    <script src="liveapp.js">  </script>
+  </div>
+
+  <div id="domain">
+    <center><h3>A BLEEDBYTES INITIATIVE</h3></center>
+    <h4></h4>
+  </div>
+</body>
+
+</html>

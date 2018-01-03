@@ -1,0 +1,56 @@
+<html>
+
+<head>
+  <title>CODEMAIDAN</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1, maximum-scale=1, user-scalable=no">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.2.8/ace.js"></script>
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="index.css" class="stylesheet" type="text/css">
+</head>
+
+<body class="container-fluid">
+  <div id="main">
+  <div d="header">
+    <center>
+      <h1>CODE MAIDAN</h1></center>
+  </div>
+  <label> SELECT THEME:</label> <select id="theme" onchange="themchng()">
+    <option value="twilight" >Twilight</option>
+    <option value="monokai">Monokai</option>
+    <option value="terminal">Terminal</option>
+    <option value="eclipse">Eclipse</option>
+    <option value="tomorrow_night_blue">Tomorrow night blue</option>
+    <option value="iplastic">Iplastic</option>
+    <option value="merbivore_soft">Merbivore Soft</option>
+    <option value="cobalt">Cobalt</option>
+  </select>
+  <div id="option">
+  <a href="live.html" target="_blank" id="r"> <button type="button">CLICK FOR LIVE EDITOR</button></a><br><br>
+  <br>
+</div>
+  <div id="row">
+    <div id="outr">
+      <div id="iner">
+        <input onclick="run();" type="button" value="Run Code">
+        <button type="button" onclick="downld()" id="dwn"><i class="fa fa-download fa-fw "style="color:blue"></i></button>
+      </div>
+      <div id="editor">
+      </div>
+    </div>
+    <iframe name="tragetCode" id="myframe"></iframe>
+  </div>
+  <script src="app.js" type="text/javascript">
+  </script>
+</div>
+
+  <div id="footer">
+    <center>
+      <h3>A BLEEDBYTES INITIATIVE</h3>
+      <center>
+        <h4></h4>
+  </div>
+
+</body>
+
+</html>
